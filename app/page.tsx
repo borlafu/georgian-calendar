@@ -45,7 +45,7 @@ export default function Home() {
             ))}
           </dl>
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center text-center">
           <p className="text-lg">desde {eventNames[Math.floor(Math.random() * eventNames.length)]}...</p>
         </div>
         <div className="flex flex-row gap-5 items-end justify-items-center">
@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <footer className="flex flex-wrap items-center justify-center">
+      <footer className="flex flex-wrap items-center justify-center text-center">
         <p className="text-sm">Hecho en 🇪🇸 España, con la cabeza en 🇬🇪 Georgia.</p>
       </footer>
     </div>
