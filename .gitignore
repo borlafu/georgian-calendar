@@ -43,7 +43,7 @@ bower_components
 .next
 
 # Next.js build output
-dist
+out
 
 # node-waf configuration
 .lock-wscript

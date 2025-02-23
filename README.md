@@ -23,7 +23,20 @@ Initialize the Firebase project:
 firebase init
 ```
 
-Build and deploy:
+Build:
+
 ```bash
-npm run build && firebase deploy
+npm run build
+```
+
+Test on a local emulator:
+
+```bash
+firebase emulators:start
+```
+
+Deploy:
+
+```bash
+firebase deploy
 ```
