@@ -32,8 +32,8 @@ export default function Calendar() {
     <dl className="grid grid-cols-3 gap-8 justify-items-center items-end text-center">
       {stats.map((stat) => (
         <div key={stat.label} className="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt className="text-base/7 text-gray-600">{stat.label}</dt>
-          <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">{stat.value}</dd>
+          <dt className="text-base/7">{stat.label}</dt>
+          <dd className="order-first text-3xl font-semibold tracking-tight sm:text-5xl">{stat.value}</dd>
         </div>
       ))}
     </dl>
