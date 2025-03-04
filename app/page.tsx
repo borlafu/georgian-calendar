@@ -2,8 +2,8 @@ import Image from "next/image";
 import skimasLogo from '../public/skimas-tr.svg';
 import chachaImg from '../public/chacha.svg';
 import shotImg from '../public/shot-glass.svg';
-import Calendar from "./calendar";
-import ChachaMemo from "./chacha-memo";
+import Calendar from "./Calendar";
+import ChachaMemo from "./ChachaMemo";
 
 export default function Home() {
 

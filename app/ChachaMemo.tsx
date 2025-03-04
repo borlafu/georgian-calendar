@@ -16,12 +16,12 @@ function randomChachaMemo() {
 
 export default function ChachaMemo() {
 
-  const [memo, setMemo] = useState("");
+  const [memo, setMemo] = useState("desde...");
   useEffect(() => {
-    setMemo(randomChachaMemo() + "...");
+    setMemo("desde " + randomChachaMemo() + "...");
   }, [])
 
   return (
-    <p className="text-lg">desde {memo}</p>
+    <p className="text-lg">{memo}</p>
   );
 }
