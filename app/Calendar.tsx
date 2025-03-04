@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 
 
 function computeGeorgianDate() {
-  const startDate = new Date("2025-01-19");
+  const startDate = new Date("2025-01-29");
   const today = new Date();
   const days = Math.floor((today.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
   const yearsSince = Math.floor(days / 365);
