@@ -2,7 +2,6 @@
 
 A calendar to remember an evening I can't remember.
 
-
 ## Getting Started
 
 First, run the development server:

@@ -1,8 +1,6 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react";
 import CountUp from "react-countup";
-
 
 function computeGeorgianDate() {
   const startDate = new Date("2025-01-29");
@@ -14,21 +12,12 @@ function computeGeorgianDate() {
   return [
     { label: "Años", value: yearsSince },
     { label: "Meses", value: monthsSince },
-    { label: "Días", value: daysSince }
-  ]
+    { label: "Días", value: daysSince },
+  ];
 }
 
 export default function Calendar() {
-
-  const [stats, setStats] = useState([
-    { label: "Años", value: 0 },
-    { label: "Meses", value: 0 },
-    { label: "Días", value: 0 }
-  ]);
-
-  useEffect(() => {
-    setStats(computeGeorgianDate());
-  }, []);
+  const stats = computeGeorgianDate();
 
   return (
     <dl className="grid grid-cols-3 gap-8 justify-items-center items-end text-center">

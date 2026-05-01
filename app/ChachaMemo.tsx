@@ -1,13 +1,11 @@
-"use client"
-
-import { useEffect, useState } from "react";
+"use client";
 
 const CHACHA_MEMOS = [
   "la chachástrofe",
   "aquella chachavillosa noche",
   "la hora del chacha",
   "el chachapocalipsis",
-  "que no me acuerdo de nada"
+  "que no me acuerdo de nada",
 ];
 
 function randomChachaMemo() {
@@ -15,13 +13,6 @@ function randomChachaMemo() {
 }
 
 export default function ChachaMemo() {
-
-  const [memo, setMemo] = useState("desde...");
-  useEffect(() => {
-    setMemo("desde " + randomChachaMemo() + "...");
-  }, [])
-
-  return (
-    <p className="text-lg">{memo}</p>
-  );
+  const memo = "desde " + randomChachaMemo() + "...";
+  return <p className="text-lg">{memo}</p>;
 }
